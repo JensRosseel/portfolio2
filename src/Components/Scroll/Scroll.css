@@ -1,0 +1,14 @@
+.scroll-container {
+    width: 100%;
+    text-align: center;
+}
+
+.scroll-button {
+    position: fixed;
+    top: 95%;
+    font-size: 40px;
+}
+
+.scroll-button:hover {
+    cursor: pointer;
+}
