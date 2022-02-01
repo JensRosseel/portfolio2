@@ -4,7 +4,7 @@ import Logo from '../../Assets/logo.png';
 
 const Who = () => {
   return (
-  <div className="who-container">
+  <div id="who" className="who-container">
     <div className="who-text">
       Hello, My name is Jens Rosseel and I am a <br />
       Web Developer With a passion for &#60;code/&#62;

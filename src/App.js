@@ -1,6 +1,9 @@
 import './App.css';
 import Who from './Components/Who/Who';
-import Navbar from './Components/Navbar/Navbar'
+import Navbar from './Components/Navbar/Navbar';
+import Projects from './Components/Projects/Projects';
+;
+
 
 function App() {
   return (
@@ -8,6 +11,7 @@ function App() {
       <div className="gradient_bg">
         <Navbar />
         <Who />
+        <Projects />
       </div> 
     </div>
   );
