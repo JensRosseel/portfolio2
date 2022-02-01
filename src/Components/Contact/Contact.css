@@ -1,0 +1,17 @@
+.contact-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+.contact-links {
+    margin-top: 30px;
+}
+
+.contact-links a{
+    font-size: 120px;
+    margin: 20px;
+}
