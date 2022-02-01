@@ -51,10 +51,17 @@
         hsl(0 0% 0% / 0.75), 
         hsl(0 0% 0% / 1)
     );
-    margin-top: 33%;
 
     transform: translateY(60%);
     transition: transform 500ms ease; 
+}
+
+#card1 .card-body {
+    margin-top: 29%;
+}
+
+#card2 .card-body {
+    margin-top: 33%;
 }
 
 .card:hover .card-body, .card:focus-within .card-body {
