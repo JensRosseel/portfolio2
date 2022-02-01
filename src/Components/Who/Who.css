@@ -1,0 +1,15 @@
+.who-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.who-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;  
+}
+
+.who-image img{
+    width: 100%;
+}

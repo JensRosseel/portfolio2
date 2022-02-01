@@ -1,0 +1,15 @@
+.navbar{
+    display: flex;
+    font-size: 20px;
+    background-color: var(--gradient-bar);
+}
+
+.navbar a{
+    padding: 18px 10px 18px 10px;
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.navbar img{
+    width: 60px;
+}
