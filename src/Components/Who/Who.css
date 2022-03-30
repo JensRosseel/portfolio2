@@ -158,5 +158,24 @@
 }
 
 @media only screen and (max-width: 768px){
+	.who-container{
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: 100%;
+	}
 
+	.who-text {
+		display: flex;
+		align-items: center;
+		text-align: center;
+		margin-top: 50%;
+	}	
+
+	.who-text a {
+		margin-top: 0;
+	}
+
+	.who-glitch {
+		display: none;
+	}
 }
