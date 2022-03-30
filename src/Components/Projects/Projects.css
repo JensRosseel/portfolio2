@@ -56,5 +56,26 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: 100%;
+        grid-template-rows: 90% 10%;
+    }
 
+    .card img {
+        display: none;
+    }
+
+    .projects-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin: 50px;
+    }
+
+    .projects-text {
+        width: 100%;
+        justify-content: center;
+    }
 }
