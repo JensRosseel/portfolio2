@@ -31,3 +31,14 @@
     margin-top: 3%;
     color: var(--color-primary);
 }
+
+@media only screen and (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+
+    .skills-text {
+        text-align: center;
+    }
+}
