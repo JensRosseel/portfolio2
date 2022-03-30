@@ -11,17 +11,5 @@
     font-size: 30px;  
 }
 
-.who-image img{
-    width: 100%;
-}
-
 @media only screen and (max-width: 768px){
-    .who-container {
-        grid-template-columns: 100%;
-        grid-template-rows: 50% 50%;
-    }
-
-    .who-text {
-        text-align: center;
-    }
 }

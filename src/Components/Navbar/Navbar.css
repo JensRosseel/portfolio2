@@ -6,6 +6,8 @@
     text-align: center;
     font-size: 35px;
     background-color:#303136;
+    padding-top: 15%;
+    padding-bottom: 15%;
 }
 
 .navbar a{
@@ -14,8 +16,8 @@
     width: 100%;
 }
 
-.navbar img{
-    width: 100%;
+.navbar a:hover{
+    color: var(--color-primary);
 }
 
 @media only screen and (max-width: 768px) {

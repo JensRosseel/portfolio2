@@ -1,143 +1,60 @@
 .projects-container {
     display: grid;
-    grid-template-columns: 90% 10%;
+    grid-template-columns: 80% 20%;
     height: 100vh;
+    width: 100%;
 }
 
-.projects-text {
+.projects-cards{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-}
-
-.projects-cards {
-    padding: 20px;
-    margin: 100px;
-    display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-#card1 {
-    background-image: url('../../Assets/spaceinvaders.JPG');
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-right: 50px;
-}
-
-#card2 {
-    background-image: url('../../Assets/movietracker.JPG');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.card {
-    padding: 10rem 0 0;
-    width: 345px;
+.card{
+    display: flex;
+    width: 45%;
     height: 450px;
-    overflow: hidden;
-    transition: transform 500ms ease;
+    margin: 10px;
+    border: 2px solid var(--color-secondary);
+    text-align: center;
 }
 
-.card:hover, card:focus-within {
-    transform: scale(1.1);
+.card img{
+    width: 345px;
+    height: 100%;
 }
 
-.card-body {
-    padding: 1.5rem;
-    background: linear-gradient(
-        hsl(0 0% 0% / 0),
-        hsl(0 0% 0% / 0.75), 
-        hsl(0 0% 0% / 1)
-    );
-
-    transform: translateY(60%);
-    transition: transform 500ms ease; 
+.card .card-content{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
 }
 
-#card1 .card-body {
-    margin-top: 29%;
+.card .card-content .card-buttons{
+    margin-top: auto;
+    margin-bottom: 20px;
 }
 
-#card2 .card-body {
-    margin-top: 33%;
-}
-
-.card:hover .card-body, .card:focus-within .card-body {
-    transform: translateY(0);
-}
-
-.card-content {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-.card-buttons {
-    margin-top: 10px;
-}
-
-.card-button {
-    cursor: pointer;
-    display: inline;
+.card .card-content .card-buttons a{
+    color: var(--color-secondary);
+    border: 1px solid var(--color-secondary);
     text-decoration: none;
-    color: var(--gradient-text);
-    background-color: rgba(0, 40, 83, 2);
     padding: 10px;
-    margin-top: 10px;
-    border-radius: 5px;
-    margin-right: 10px;
+    margin-left: 10px;
 }
 
+.card .card-content .card-buttons a:hover{
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    box-shadow: rgba(0,252,252, 0.35) 0px 0px 15px;
+}
 
-@media only screen and (max-width: 480px) {
-    .projects-container {
-        margin-top: 20%;
-        grid-template-columns: 100%;
-        grid-template-rows: 85% 15%;
-    }
-
-    .projects-cards {
-        margin: 0px;
-        padding: 0px;
-        flex-direction: column;
-        overflow:visible;
-    }
-
-    .card {
-        margin: 10px;
-        width: 90%;
-    }
-
-    .card:hover, card:focus-within {
-        transform: scale(1);
-    }
-
-    .card-body {
-        transform: translateY(-92%);
-    }
-
-    .card:hover .card-body, .card:focus-within .card-body {
-        transform: translateY(-92%);
-    }
-
-    .card-buttons {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .projects-text {
-        text-align: center;
-    }
-
-    #card1 {
-        margin: 0px;
-    }
+.projects-text{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
 }
 
 @media only screen and (max-width: 768px) {
-    .projects-container {
-        grid-template-columns: 100%;
-        grid-template-rows: 85% 15%;
-    }
+
 }
