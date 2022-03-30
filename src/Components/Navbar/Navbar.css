@@ -1,27 +1,23 @@
 .navbar{
     display: flex;
+    height: 100vh;
+    width: 5%;
+    flex-wrap: wrap;
+    text-align: center;
     font-size: 35px;
-    background-color: var(--gradient-bar);
+    background-color:#303136;
 }
 
 .navbar a{
-    padding: 18px 50px 18px 50px;
     text-decoration: none;
-    color: var(--color-text);
+    color: var(--color-secondary);
+    width: 100%;
 }
 
 .navbar img{
-    width: 80px;
+    width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
-    .navbar {
-        font-size: 15px;
-    }
 
-    .navbar a{
-        padding: 30px 10px 6px 10px;
-        text-decoration: none;
-        color: var(--color-text);
-    }
 }

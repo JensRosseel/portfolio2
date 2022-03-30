@@ -3,19 +3,19 @@ import Who from './Components/Who/Who';
 import Navbar from './Components/Navbar/Navbar';
 import Projects from './Components/Projects/Projects';
 import Contact from './Components/Contact/Contact';
-import Scroll from './Components/Scroll/Scroll';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <div className="gradient_bg">
-        <Navbar />
-        <Scroll />
-        <Who />
-        <Projects />
-        <Contact />
-        
-      </div> 
+    <div className="app">
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Who />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </Router>
     </div>
   );
 }
