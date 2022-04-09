@@ -9,7 +9,7 @@ const Navbar = () => {
   const [style, setStyle] = useState('navbar')
 
   const handleHamburger = () => {
-    if(style == 'navbar')
+    if(style === 'navbar')
     {
       setStyle('navbar-mobile')
     }

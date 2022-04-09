@@ -2,10 +2,14 @@ import React from 'react';
 import './Projects.css';
 import spaceinvaders from '../../Assets/spaceinvaders.JPG';
 import movietracker from '../../Assets/movietracker.JPG';
+import mythos from '../../Assets/mythos.jpg';
 
 const Projects = () => {
   return (
     <div className="projects-container">
+        <div className="projects-text">
+            Here are some of my projects.
+        </div>
         <div className="projects-cards">
             <div className="card">
                     <img src={spaceinvaders} alt="space invaders" />
@@ -33,9 +37,19 @@ const Projects = () => {
                         </div>
                     </div>  
             </div>
-        </div>
-        <div className="projects-text">
-            Here are some of my projects.
+            <div className="card">
+                    <img src={mythos} alt="mythos" />
+                    <div className='card-content'>
+                        <h2 className="card-title">Mythos</h2>
+                        <p className="card-text">
+                            This is a forum made with laravel for people to create and share their mythos.
+                        </p>
+                        <div className="card-buttons">
+                            <a href="https://www.movietracker.jensrosseel.com/" target="_blank" rel="noopener noreferrer" className="card-button">To Deploy</a>
+                            <a href="https://github.com/JensRosseel/movie-tracker" target="_blank" rel="noopener noreferrer" className="card-button">To Repo</a>
+                        </div>
+                    </div>  
+            </div>
         </div>
     </div>
   );

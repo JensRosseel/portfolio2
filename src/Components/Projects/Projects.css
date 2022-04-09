@@ -1,7 +1,8 @@
 .projects-container {
-    display: grid;
-    grid-template-columns: 80% 20%;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
 }
 
@@ -56,11 +57,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .projects-container {
-        grid-template-columns: 100%;
-        grid-template-rows: 90% 10%;
-    }
-
     .card img {
         display: none;
     }
@@ -70,11 +66,13 @@
     }
 
     .card {
-        width: 100%;
+        width: 90%;
+        height: 200px;
         margin: 50px;
     }
 
     .projects-text {
+        margin-top: 15%;
         width: 100%;
         justify-content: center;
     }
