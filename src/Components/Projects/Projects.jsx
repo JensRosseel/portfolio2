@@ -2,7 +2,7 @@ import React from 'react';
 import './Projects.css';
 import spaceinvaders from '../../Assets/spaceinvaders.JPG';
 import movietracker from '../../Assets/movietracker.JPG';
-import mythos from '../../Assets/mythos.jpg';
+import fightinggame from '../../Assets/fightinggame.jpg';
 
 const Projects = () => {
   return (
@@ -38,15 +38,15 @@ const Projects = () => {
                     </div>  
             </div>
             <div className="card">
-                    <img src={mythos} alt="mythos" />
+                    <img src={fightinggame} alt="Fighting Game" />
                     <div className='card-content'>
-                        <h2 className="card-title">Mythos</h2>
+                        <h2 className="card-title">Fighting Game</h2>
                         <p className="card-text">
-                            This is a forum made with laravel for people to create and share their mythos.
+                            This fighting game was made with plain js and canvas.
                         </p>
                         <div className="card-buttons">
-                            <a href="https://www.movietracker.jensrosseel.com/" target="_blank" rel="noopener noreferrer" className="card-button">To Deploy</a>
-                            <a href="https://github.com/JensRosseel/movie-tracker" target="_blank" rel="noopener noreferrer" className="card-button">To Repo</a>
+                            <a href="https://fighting-game-jens.netlify.app" target="_blank" rel="noopener noreferrer" className="card-button">To Deploy</a>
+                            <a href="https://github.com/JensRosseel/fighting-game" target="_blank" rel="noopener noreferrer" className="card-button">To Repo</a>
                         </div>
                     </div>  
             </div>
