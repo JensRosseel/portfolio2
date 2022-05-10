@@ -1,6 +1,6 @@
 import React from 'react';
 import './Projects.css';
-import spaceinvaders from '../../Assets/spaceinvaders.JPG';
+import dmcforum from '../../Assets/dmcforum.JPG';
 import movietracker from '../../Assets/movietracker.JPG';
 import fightinggame from '../../Assets/fightinggame.jpg';
 
@@ -12,15 +12,15 @@ const Projects = () => {
         </div>
         <div className="projects-cards">
             <div className="card">
-                    <img src={spaceinvaders} alt="space invaders" />
+                    <img src={dmcforum} alt="dmc forum" />
                     <div className='card-content'>
-                        <h2 className="card-title">Space Invaders</h2>
+                        <h2 className="card-title">dmc forum</h2>
                         <p className="card-text">
-                            This is a space invaders clone made with pure js using DOM manipulation.
+                            This is a forum made with laravel.
                         </p>
                         <div className="card-buttons">
-                            <a href="https://spaceinvaders-jensrosseel.netlify.app" target="_blank" rel="noopener noreferrer" className="card-button">To Deploy</a>
-                            <a href="https://github.com/JensRosseel/space-invaders" target="_blank" rel="noopener noreferrer" className="card-button">To Repo</a>
+                            <a href="https://dmcforum.jensrosseel.com" target="_blank" rel="noopener noreferrer" className="card-button">To Deploy</a>
+                            <a href="https://github.com/JensRosseel/dmc-forum" target="_blank" rel="noopener noreferrer" className="card-button">To Repo</a>
                         </div>
                     </div>                
             </div>
