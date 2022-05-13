@@ -17,10 +17,10 @@ const Who = () => {
     <div className='who-glitch'>
     <div className='glitch'>
       <img src={codehead} alt='head with code inside'/>
-      <div class="glitch__layers">
-        <div class="glitch__layer"></div>
-        <div class="glitch__layer"></div>
-        <div class="glitch__layer"></div>
+      <div className="glitch__layers">
+        <div className="glitch__layer"></div>
+        <div className="glitch__layer"></div>
+        <div className="glitch__layer"></div>
       </div>
     </div>
     </div>

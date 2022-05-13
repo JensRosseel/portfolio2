@@ -25,6 +25,10 @@
     height: 100%;
 }
 
+.card-content{
+    width: 100%;
+}
+
 .card .card-content{
     display: flex;
     flex-direction: column;
