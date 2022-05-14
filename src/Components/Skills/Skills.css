@@ -1,44 +1,180 @@
 .skills-container {
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    font-size: 20px;
-
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  font-size: 20px;
 }
 
 .skills-text {
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .skills-title {
-    font-size: 50px;
-    margin-bottom: 5%;
+  font-size: 50px;
+  margin-bottom: 5%;
 }
 
 .skills-visualiser {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-left: 10px;
-    margin-right: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 5%;
+  font-size: 3rem;
+  position: relative;
 }
 
-.skill-name {
-    margin-top: 3%;
-    color: var(--color-primary);
+.orbit-icon {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orbit-wrap {
+  height: 100%;
+  list-style: none;
+  font-size: 2.3rem;
+}
+
+.orbit-wrap > li {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.ring-2 {
+  width: 15em;
+  height: 15em;
+  -webkit-animation: clockwiseRotate 25s linear infinite;
+  animation: clockwiseRotate 25s linear infinite;
+}
+
+.ring-2 i {
+  -webkit-animation: counterClockwiseRotate 25s linear infinite;
+  animation: counterClockwiseRotate 25s linear infinite;
+}
+
+.ring-2 > *:nth-of-type(1) {
+  -webkit-transform: rotate(45deg) translate(7.5em) rotate(-45deg);
+  transform: rotate(45deg) translate(7.5em) rotate(-45deg);
+}
+
+.ring-2 > *:nth-of-type(2) {
+  -webkit-transform: rotate(90deg) translate(7.5em) rotate(-90deg);
+  transform: rotate(90deg) translate(7.5em) rotate(-90deg);
+}
+
+.ring-2 > *:nth-of-type(3) {
+  -webkit-transform: rotate(135deg) translate(7.5em) rotate(-135deg);
+  transform: rotate(135deg) translate(7.5em) rotate(-135deg);
+}
+
+.ring-2 > *:nth-of-type(4) {
+  -webkit-transform: rotate(180deg) translate(7.5em) rotate(-180deg);
+  transform: rotate(180deg) translate(7.5em) rotate(-180deg);
+}
+
+.ring-2 > *:nth-of-type(5) {
+  -webkit-transform: rotate(225deg) translate(7.5em) rotate(-225deg);
+  transform: rotate(225deg) translate(7.5em) rotate(-225deg);
+}
+
+.ring-2 > *:nth-of-type(6) {
+  -webkit-transform: rotate(285deg) translate(7.5em) rotate(-285deg);
+  transform: rotate(270deg) translate(7.5em) rotate(-270deg);
+}
+
+.ring-2 > *:nth-of-type(7) {
+  -webkit-transform: rotate(315deg) translate(7.5em) rotate(-315deg);
+  transform: rotate(315deg) translate(7.5em) rotate(-315deg);
+}
+
+.ring-2 > *:nth-of-type(8) {
+  -webkit-transform: rotate(360deg) translate(7.5em) rotate(-360deg);
+  transform: rotate(360deg) translate(7.5em) rotate(-360deg);
+}
+
+ul[class^="ring"] li {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.6em;
+  height: 1.6em;
+  margin: -0.8em;
+}
+
+.orbit-center {
+  z-index: 5;
+  width: 5rem;
+  height: 5rem;
+  background-image: url("../../Assets/monitor.png");
+  background-size: cover;
+}
+
+@-webkit-keyframes clockwiseRotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes clockwiseRotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes counterClockwiseRotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes counterClockwiseRotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    .skills-container {
-        grid-template-columns: 100%;
-        grid-template-rows: 50% 50%;
-    }
+  .skills-container {
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+  }
 
-    .skills-text {
-        text-align: center;
-    }
+  .skills-text {
+    text-align: center;
+  }
+
+  .skills-visualiser {
+    display: none;
+  }
 }

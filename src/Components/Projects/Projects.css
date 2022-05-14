@@ -78,6 +78,6 @@
     .projects-text {
         margin-top: 15%;
         width: 100%;
-        justify-content: center;
+        text-align: center;
     }
 }
